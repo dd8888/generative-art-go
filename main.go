@@ -8,16 +8,16 @@ import (
 	"time"
 
 	svg "github.com/ajstarks/svgo"
+	"github.com/lucasb-eyer/go-colorful"
 )
-
+// ▊ ▋ ❘ ❙ ❚ ▀ ▘ ▝ ▙ ▚ ▛ ▜ ▟ ▞ ░ ▒ ▓ ▂ ▁ ▬ ▔ ▫ ▯ ▭ ▱ ◽ □ ◻ ▢ ⊞ ⊡ ⊟ ⊠ ▣ ▤ ▥ ▦ ⬚ ▧ ▨ ▩ ⬓ ◧ ⬒ ◨ ◩ ◪ ⬔ ⬕ ❏ ❐ ❑ ❒ ⧈ ◰ ◱ ◳ ◲ ◫ ⧇ ⧅ ⧄ ⍁ ⍂ ⟡ ⧉ ○ ◌ ◍ ◎ ◯ ❍ ◉ ⦾ ⊙ ⦿ ⊜ ⊖ ⊘ ⊚ ⊛ ⊝ ● ⚫ ⦁ ◐ ◑ ◒ ◓ ◔ ◕ ⦶ ⦸ ◵ ◴ ◶ ◷ ⊕ ⊗ ⦇ ⦈ ⦉ ⦊ ❨ ❩ ⸨ ⸩ ◖ ◗ ❪ ❫ ❮ ❯ ❬ ❭ ❰ ❱ ⊏ ⊐ ⊑ ⊒ ◘ ◙ ◚ ◛ ◜ ◝ ◞ ◟ ◠ ◡ ⋒ ⋓ ⋐ ⋑ ⥰ ╰ ╮ ╭ ╯ ⌒ ⥿ ⥾ ⥽ ⥼ ⥊ ⥋ ⥌ ⥍ ⥎ ⥐ ⥑ ⥏ ╳ ✕ ⤫ ⤬ ╱ ╲ ⧸ ⧹ ⌓ ◦ ❖ ✖ ✚ ✜ ⧓ ⧗ ⧑ ⧒ ⧖ _ ⚊ ╴ ╼ ╾ ‐ ⁃ ‑ ‒ - – ⎯ — ― ╶ ╺ ╸ ─ ━ ┄ ┅ ┈ ┉ ╌ ╍ ═ ≣ ≡ ☰ ☱ ☲ ☳ ☴ ☵ ☶ ☷ ╵ ╷ ╹ ╻ │ ▕ ▏ ┃ ┆ ┇ ┊ ╎ ┋ ╿ ╽ ⌞ ⌟ ⌜ ⌝ ⌊ ⌋ ⌈ ⌉ ⌋ ┌ ┍ ┎ ┏ ┐ ┑ ┒ ┓ └ ┕ ┖ ┗ ┘ ┙ ┚ ┛ ├ ┝ ┞ ┟ ┠ ┡ ┢ ┣ ┤ ┥ ┦ ┧ ┨ ┩ ┪ ┫ ┬ ┭ ┮ ┳ ┴ ┵ ┶ ┷ ┸ ┹ ┺ ┻ ┼ ┽ ┾ ┿ ╀ ╁ ╂ ╃ ╄ ╅ ╆ ╇ ╈ ╉ ╊ ╋ ╏ ║ ╔ ╒ ╓ ╕ ╖ ╗ ╚ ╘ ╙ ╛ ╜ ╝ ╞ ╟ ╠ ╡ ╢ ╣ ╤ ╥ ╦ ╧ ╨ ╩ ╪ ╫ ╬
 const (
 	letterNum = 26
-
 	fullRotation     = 360.0
 	transparencyStep = .03
-
-	width  = 1200
-	height = 1200
+	
+	width  = 720
+	height = 720
 )
 
 var (
@@ -46,15 +46,20 @@ func main() {
 func initCanvas(scetchWidth, scetchHeight int) *svg.SVG {
 	canvas := svg.New(os.Stdout)
 	canvas.Start(width, height)
-	canvas.Rect(0, 0, width, height)
-	val, _ := randomHex(3)
-	fmt.Println(val)
-	canvas.Gstyle("font-family: serif; fill: #" + val + "; font-size: 72pt")
+	
+	canvas.Rect(0, 0, width, height, "fill: " + colorful.HappyColor().Hex())
+	for i := 0; i < rand.Intn(100); i++ {
+		canvas.Rect(rand.Intn(width), rand.Intn(height), rand.Intn(width), rand.Intn(height), "fill: " + colorful.FastWarmColor().Hex())
+	}
+
+	//val, _ := randomHex(3)
+	canvas.Gstyle("font-family: serif; fill: " + colorful.WarmColor().Hex() + "; font-size: 300pt")
 	canvas.Gtransform(fmt.Sprintf("translate(%d, %d)", scetchWidth, scetchHeight))
 	return canvas
 }
 
 func drawLetters(canvas *svg.SVG) {
+
 	character := getRandomChar()
 	for angel := 0.0; angel <= fullRotation; angel += rotationStep {
 		canvas.Text(0, 0, character,
@@ -66,7 +71,10 @@ func drawLetters(canvas *svg.SVG) {
 
 // Returns random character
 func getRandomChar() string {
-	return string('a' + rand.Intn(letterNum))
+	shapes := [74]string{"▲", "▼"," ◀", "▶" , "◢", "◣", "◥", "◤", "△", "▽", "◿", "◺", "◹", "◸", "▴", "▾", "◂", "▸", "▵", "▿", "◃", "▹", "◁", "▷", "◅", "▻", "◬", "⟁", "⧋", "⧊", "⊿", "∆", "∇", "◭", "◮", "⧩", "⧨", "⌔", "⟐", "◇", "◆", "◈", "⬖", "⬗", "⬘", "⬙", "⬠", "⬡", "⎔", "⋄", "◊", "⧫", "⬢", "⬣", "▰", "▪", "◼", "▮", "◾", "▗", "▖", "■", "∎", "▃", "▄","▅", "▆", "▇", "█", "▌", "▐", "▍", "▎", "▉"}
+
+	return shapes[rand.Intn(74)]
+	//return string('a' + rand.Intn(letterNum))
 }
 
 func closeCanvas(canvas *svg.SVG) {
