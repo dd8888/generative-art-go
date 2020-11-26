@@ -17,8 +17,8 @@ const (
 	fullRotation     = 360.0
 	transparencyStep = .03
 
-	width  = 720
-	height = 720
+	width  = 2000
+	height = 2000
 )
 
 var (
@@ -56,8 +56,8 @@ func initCanvas(scetchWidth, scetchHeight int) *svg.SVG {
 	for i := 0; i < rand.Intn(10); i++ {
 		canvas.Circle(rand.Intn(width), rand.Intn(width), rand.Intn(width/3), "fill: "+colorful.HappyColor().Hex())
 	}
-	min := 60
-	max := 250
+	min := 150
+	max := 550
 	value := fmt.Sprint(rand.Intn(max-min) + min)
 	canvas.Gstyle("font-family: serif; fill: " + colorful.WarmColor().Hex() + "; font-size: " + value + "pt")
 	canvas.Gtransform(fmt.Sprintf("translate(%d, %d)", scetchWidth, scetchHeight))
