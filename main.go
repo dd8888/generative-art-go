@@ -56,7 +56,7 @@ func initCanvas(scetchWidth, scetchHeight int) *svg.SVG {
 		canvas.Circle(rand.Intn(width), rand.Intn(width), rand.Intn(width/3), "fill: "+colorful.HappyColor().Hex())
 	}
 	min := 150
-	max := 550
+	max := 450
 	value := fmt.Sprint(rand.Intn(max-min) + min)
 	//" + colorful.WarmColor().Hex() + "
 	canvas.Gstyle("font-family: serif; fill: white; font-size: " + value + "pt")
