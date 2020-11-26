@@ -1,4 +1,4 @@
-name: Run and upload image
+name: Run and upload image to twitter
 on:
   schedule:
     - cron: "0 1-23 * * *"
