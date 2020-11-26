@@ -21,7 +21,8 @@ jobs:
           node-version: "12.x"
       - name: Installing Node Dependencies
         run: npm install
-
+      - name: Create image
+        run: svg2png --input "preimage.svg" --output ./images --format jpeg
       - name: Build
         env:
           INSTA_ACCOUNT: ${{ secrets.INSTA_ACCOUNT }}
