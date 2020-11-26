@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dd8888/generative-art-go#readme",
   "dependencies": {
     "convert-svg-to-png": "^0.5.0",
-    "svg-png-converter": "0.0.9"
+    "svg-png-converter": "0.0.9",
+    "twit": "^2.2.11"
   }
 }
