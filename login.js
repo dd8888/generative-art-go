@@ -403,7 +403,12 @@ async function run() {
 
   // Type
   const random = Math.floor(Math.random() * json.length);
-  await page.keyboard.type(json[random].text + " " + json[random].author);
+  await page.keyboard.type(
+    json[random].text +
+      " " +
+      json[random].author +
+      "#codeart #sketch #artista #artoninstagram #artstagram #artistofinstagram #painting #arts #arte #instaart #artist #dailyart"
+  );
 
   console.debug("waiting for share");
 
