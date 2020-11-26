@@ -3,20 +3,18 @@
 <svg width="2000" height="2000"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0" y="0" width="2000" height="2000" style="fill: #875d4e" />
-<circle cx="1190" cy="715" r="346" style="fill: #e28131" />
-<circle cx="691" cy="523" r="264" style="fill: #ce6351" />
-<circle cx="341" cy="1825" r="281" style="fill: #5287fa" />
-<circle cx="44" cy="346" r="412" style="fill: #717df3" />
-<g style="font-family: serif; fill: #5e72a7; font-size: 218pt">
+<rect x="0" y="0" width="2000" height="2000" style="fill: #78243d" />
+<rect x="1832" y="718" width="983" height="208" style="fill: #929026" />
+<rect x="443" y="824" width="1532" height="645" style="fill: #fd78e0" />
+<rect x="1619" y="1506" width="1144" height="1695" style="fill: #489b1e" />
+<circle cx="1445" cy="1507" r="550" style="fill: #36ab67" />
+<g style="font-family: serif; fill: white; font-size: 546pt">
 <g transform="translate(1000, 1000)">
-<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >◁</text>
-<text x="0" y="0" transform="rotate(58.990)" fill-opacity="0.970" >◁</text>
-<text x="0" y="0" transform="rotate(117.980)" fill-opacity="0.940" >◁</text>
-<text x="0" y="0" transform="rotate(176.970)" fill-opacity="0.910" >◁</text>
-<text x="0" y="0" transform="rotate(235.960)" fill-opacity="0.880" >◁</text>
-<text x="0" y="0" transform="rotate(294.950)" fill-opacity="0.850" >◁</text>
-<text x="0" y="0" transform="rotate(353.940)" fill-opacity="0.820" >◁</text>
+<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >△</text>
+<text x="0" y="0" transform="rotate(82.749)" fill-opacity="0.970" >△</text>
+<text x="0" y="0" transform="rotate(165.498)" fill-opacity="0.940" >△</text>
+<text x="0" y="0" transform="rotate(248.246)" fill-opacity="0.910" >△</text>
+<text x="0" y="0" transform="rotate(330.995)" fill-opacity="0.880" >△</text>
 </g>
 </g>
 </svg>
