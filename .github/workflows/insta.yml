@@ -1,0 +1,31 @@
+name: Main
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: 0 0 * * *
+jobs:
+  create:
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: "^1.13.1" # The Go version to download (if necessary) and use.
+      - run: go run main.go > preimage.svg
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Installing Node Dependencies
+        run: npm install
+
+      - name: Build
+        env:
+          INSTA_ACCOUNT: ${{ secrets.INSTA_ACCOUNT }}
+          INSTA_PASSWORD: ${{ secrets.INSTA_PASSWORD }}
+        run: npm start
