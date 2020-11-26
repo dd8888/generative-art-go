@@ -1,7 +1,14 @@
 var Twit = require("twit");
 const fs = require("fs");
 const argv = require("minimist")(process.argv.slice(2));
+const REQUIRED_ARGS = ["key", "secret", "token", "tokensecret"];
 
+for (let arg of REQUIRED_ARGS) {
+  if (!(arg in argv)) {
+    console.log("Please specify a " + arg);
+    fail();
+  }
+}
 var T = new Twit({
   consumer_key: argv.key,
   consumer_secret: argv.secret,
