@@ -403,7 +403,7 @@ async function run() {
 
   // Type
   const random = Math.floor(Math.random() * json.length);
-  page.keyboard.type(json[random].text + " " + json[random].author);
+  await page.keyboard.type(json[random].text + " " + json[random].author);
 
   console.debug("waiting for share");
 
