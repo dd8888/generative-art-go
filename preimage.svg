@@ -3,18 +3,23 @@
 <svg width="2000" height="2000"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0" y="0" width="2000" height="2000" style="fill: #78243d" />
-<rect x="1832" y="718" width="983" height="208" style="fill: #929026" />
-<rect x="443" y="824" width="1532" height="645" style="fill: #fd78e0" />
-<rect x="1619" y="1506" width="1144" height="1695" style="fill: #489b1e" />
-<circle cx="1445" cy="1507" r="550" style="fill: #36ab67" />
-<g style="font-family: serif; fill: white; font-size: 546pt">
+<rect x="0" y="0" width="2000" height="2000" style="fill: #2c5843" />
+<rect x="1529" y="1346" width="286" height="317" style="fill: #59d887" />
+<rect x="548" y="83" width="874" height="1143" style="fill: #4383da" />
+<circle cx="1611" cy="1661" r="420" style="fill: #2c9a3c" />
+<circle cx="1113" cy="1379" r="125" style="fill: #f68ede" />
+<g style="font-family: serif; fill: white; font-size: 313pt">
 <g transform="translate(1000, 1000)">
-<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >△</text>
-<text x="0" y="0" transform="rotate(82.749)" fill-opacity="0.970" >△</text>
-<text x="0" y="0" transform="rotate(165.498)" fill-opacity="0.940" >△</text>
-<text x="0" y="0" transform="rotate(248.246)" fill-opacity="0.910" >△</text>
-<text x="0" y="0" transform="rotate(330.995)" fill-opacity="0.880" >△</text>
+<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >⊿</text>
+<text x="0" y="0" transform="rotate(38.011)" fill-opacity="0.970" >⊿</text>
+<text x="0" y="0" transform="rotate(76.021)" fill-opacity="0.940" >⊿</text>
+<text x="0" y="0" transform="rotate(114.032)" fill-opacity="0.910" >⊿</text>
+<text x="0" y="0" transform="rotate(152.043)" fill-opacity="0.880" >⊿</text>
+<text x="0" y="0" transform="rotate(190.054)" fill-opacity="0.850" >⊿</text>
+<text x="0" y="0" transform="rotate(228.064)" fill-opacity="0.820" >⊿</text>
+<text x="0" y="0" transform="rotate(266.075)" fill-opacity="0.790" >⊿</text>
+<text x="0" y="0" transform="rotate(304.086)" fill-opacity="0.760" >⊿</text>
+<text x="0" y="0" transform="rotate(342.097)" fill-opacity="0.730" >⊿</text>
 </g>
 </g>
 </svg>
