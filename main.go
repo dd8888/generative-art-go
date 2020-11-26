@@ -49,12 +49,17 @@ func initCanvas(scetchWidth, scetchHeight int) *svg.SVG {
 	canvas.Start(width, height)
 
 	canvas.Rect(0, 0, width, height, "fill: "+colorful.WarmColor().Hex())
-	for i := 0; i < rand.Intn(30); i++ {
+	for i := 0; i < rand.Intn(10); i++ {
 		canvas.Rect(rand.Intn(width), rand.Intn(height), rand.Intn(width), rand.Intn(height), "fill: "+colorful.HappyColor().Hex())
-	}
 
-	//val, _ := randomHex(3)
-	canvas.Gstyle("font-family: serif; fill: " + colorful.FastHappyColor().Hex() + "; font-size: 300pt")
+	}
+	for i := 0; i < rand.Intn(10); i++ {
+		canvas.Circle(rand.Intn(width), rand.Intn(width), rand.Intn(width/3), "fill: "+colorful.HappyColor().Hex())
+	}
+	min := 60
+	max := 250
+	value := fmt.Sprint(rand.Intn(max-min) + min)
+	canvas.Gstyle("font-family: serif; fill: " + colorful.WarmColor().Hex() + "; font-size: " + value + "pt")
 	canvas.Gtransform(fmt.Sprintf("translate(%d, %d)", scetchWidth, scetchHeight))
 	return canvas
 }
@@ -72,8 +77,10 @@ func drawLetters(canvas *svg.SVG) {
 // Returns random character
 func getRandomChar() string {
 	shapes := []string{"▲", "▼", " ◀", "▶", "◢", "◣", "◥", "◤", "△", "▽", "◿", "◺", "◹", "◸", "▴", "▾", "◂", "▸", "▵", "▿", "◃", "▹", "◁", "▷", "◅", "▻", "◬", "⟁", "⧋", "⧊", "⊿", "∆", "∇", "◭", "◮", "⧩", "⧨", "⌔", "⟐", "◇", "◆", "◈", "⬖", "⬗", "⬘", "⬙", "⬠", "⬡", "⎔", "⋄", "◊", "⧫", "⬢", "⬣", "▰", "▪", "◼", "▮", "◾", "▗", "▖", "■", "∎", "▃", "▄", "▅", "▆", "▇", "█", "▌", "▐", "▍", "▎", "▉", "▊", "▋", "❘", "❙", "❚", "▀", "▘", "▝", "▙", "▚", "▛", "▜", "▟", "▞", "░", "▒", "▓", "▂", "▁", "▬", "▔", "▫", "▯", "▭", "▱", "◽", "□", "◻", "▢", "⊞", "⊡", "⊟", "⊠", "▣", "▤", "▥", "▦", "⬚", "▧", "▨", "▩", "⬓", "◧", "⬒", "◨", "◩", "◪", "⬔", "⬕", "❏", "❐", "❑", "❒", "⧈", "◰", "◱", "◳", "◲", "◫", "⧇", "⧅", "⧄", "⍁", "⍂", "⟡", "⧉", "○", "◌", "◍", "◎", "◯", "❍", "◉", "⦾", "⊙", "⦿", "⊜", "⊖", "◴", "⸨", "⋒", "⥑", "╳", "❖", "☱", "┬", "┴", "╆", "╓", "╚", "╬"}
+	randomIndex := rand.Intn(len(shapes))
+	pick := shapes[randomIndex]
 
-	return shapes[rand.Intn(158)]
+	return pick
 	//return string('a' + rand.Intn(letterNum))
 }
 
