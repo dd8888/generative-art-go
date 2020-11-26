@@ -18,3 +18,15 @@ jobs:
         with:
           go-version: "^1.13.1" # The Go version to download (if necessary) and use.
       - run: sudo chown -R $USER /usr/local/lib/node_modules && npm i svg-png-converter -g && go run main.go > preimage.svg && svg2png --input "preimage.svg" --output ./images --format jpeg && npm install && npm start
+      - uses: actions/checkout@master
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Installing Node Dependencies
+        run: npm install
+      - name: Build
+        env:
+          INSTA_ACCOUNT: ${{ secrets.INSTA_ACCOUNT }}
+          INSTA_PASSWORD: ${{ secrets.INSTA_PASSWORD }}
+        run: npm start
