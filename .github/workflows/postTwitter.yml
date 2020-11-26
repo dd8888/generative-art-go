@@ -19,4 +19,4 @@ jobs:
           TWITTER_TOKENSECRET: ${{ secrets.TWITTER_TOKENSECRET}}
         with:
           go-version: "^1.13.1" # The Go version to download (if necessary) and use.
-      - run: sudo chown -R $USER /usr/local/lib/node_modules && npm i svg-png-converter -g && go run main.go > preimage.svg && svg2png --input "preimage.svg" --output ./images --format jpeg && npm install && node tweet.js --key ${{ secrets.TWITTER_KEY }} --secret ${{ secrets.TWITTER_SECRET }} --token ${{ secrets.TWITTER_TOKEN }} --tokensecret {{ secrets.TWITTER_TOKENSECRET }}
+      - run: sudo chown -R $USER /usr/local/lib/node_modules && npm i svg-png-converter -g && go run main.go > preimage.svg && svg2png --input "preimage.svg" --output ./images --format jpeg && npm install && node tweet.js --key ${{ secrets.TWITTER_KEY }} --secret ${{ secrets.TWITTER_SECRET }} --token ${{ secrets.TWITTER_TOKEN }} --tokensecret ${{ secrets.TWITTER_TOKENSECRET }}
