@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: "^1.13.1" # The Go version to download (if necessary) and use.
-      - run: go run main.go > preimage.svg
+      - run: npm i svg-png-converter -g && go run main.go > preimage.svg && svg2png --input "preimage.svg" --output ./images --format jpeg
       - uses: actions/checkout@master
       - name: Setup node
         uses: actions/setup-node@v1
@@ -21,10 +21,6 @@ jobs:
           node-version: "12.x"
       - name: Installing Node Dependencies
         run: npm install
-      - name: Install image package
-        run: npm i svg-png-converter -g
-      - name: Create image
-        run: svg2png --input "preimage.svg" --output ./images --format jpeg
       - name: Build
         env:
           INSTA_ACCOUNT: ${{ secrets.INSTA_ACCOUNT }}
