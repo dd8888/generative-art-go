@@ -16,8 +16,8 @@ const (
 	fullRotation     = 360.0
 	transparencyStep = .03
 
-	width  = 2000
-	height = 2000
+	width  = 1080
+	height = 1080
 )
 
 var (
