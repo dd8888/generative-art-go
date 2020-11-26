@@ -1,4 +1,4 @@
-name: Run and upload
+name: Run and upload image
 on:
   schedule:
     - cron: "0 */6 * * *"
