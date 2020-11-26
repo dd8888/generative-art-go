@@ -1,7 +1,7 @@
 name: Main
 on:
   schedule:
-    - cron: "0 1-23 * * *"
+    - cron: "0 */6 * * *"
 jobs:
   create:
     runs-on: ubuntu-latest
