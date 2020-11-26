@@ -407,7 +407,7 @@ async function run() {
     json[random].text +
       " " +
       json[random].author +
-      "#codeart #sketch #artista #artoninstagram #artstagram #artistofinstagram #painting #arts #arte #instaart #artist #dailyart"
+      " #codeart #sketch #artista #artoninstagram #artstagram #artistofinstagram #painting #arts #arte #instaart #artist #dailyart"
   );
 
   console.debug("waiting for share");

@@ -48,13 +48,13 @@ func initCanvas(scetchWidth, scetchHeight int) *svg.SVG {
 	canvas := svg.New(os.Stdout)
 	canvas.Start(width, height)
 
-	canvas.Rect(0, 0, width, height, "fill: "+colorful.HappyColor().Hex())
-	for i := 0; i < rand.Intn(100); i++ {
-		canvas.Rect(rand.Intn(width), rand.Intn(height), rand.Intn(width), rand.Intn(height), "fill: "+colorful.FastWarmColor().Hex())
+	canvas.Rect(0, 0, width, height, "fill: "+colorful.WarmColor().Hex())
+	for i := 0; i < rand.Intn(30); i++ {
+		canvas.Rect(rand.Intn(width), rand.Intn(height), rand.Intn(width), rand.Intn(height), "fill: "+colorful.HappyColor().Hex())
 	}
 
 	//val, _ := randomHex(3)
-	canvas.Gstyle("font-family: serif; fill: " + colorful.HappyColor().Hex() + "; font-size: 300pt")
+	canvas.Gstyle("font-family: serif; fill: " + colorful.FastHappyColor().Hex() + "; font-size: 300pt")
 	canvas.Gtransform(fmt.Sprintf("translate(%d, %d)", scetchWidth, scetchHeight))
 	return canvas
 }
