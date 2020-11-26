@@ -3,29 +3,20 @@
 <svg width="2000" height="2000"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0" y="0" width="2000" height="2000" style="fill: #82596f" />
-<rect x="1938" y="1259" width="1036" height="568" style="fill: #4c9af8" />
-<rect x="1535" y="763" width="585" height="27" style="fill: #c5a91a" />
-<rect x="1131" y="1955" width="1204" height="554" style="fill: #eb5b47" />
-<rect x="1108" y="548" width="1483" height="694" style="fill: #ccb94e" />
-<circle cx="827" cy="1051" r="453" style="fill: #3e974f" />
-<circle cx="1326" cy="1413" r="58" style="fill: #de7dcf" />
-<circle cx="1258" cy="1043" r="26" style="fill: #e9b655" />
-<circle cx="595" cy="1538" r="545" style="fill: #7fc066" />
-<circle cx="1529" cy="1928" r="647" style="fill: #71b14b" />
-<circle cx="1081" cy="1466" r="226" style="fill: #d65c36" />
-<circle cx="1831" cy="1451" r="29" style="fill: #d94fbb" />
-<g style="font-family: serif; fill: #51264b; font-size: 314pt">
+<rect x="0" y="0" width="2000" height="2000" style="fill: #875d4e" />
+<circle cx="1190" cy="715" r="346" style="fill: #e28131" />
+<circle cx="691" cy="523" r="264" style="fill: #ce6351" />
+<circle cx="341" cy="1825" r="281" style="fill: #5287fa" />
+<circle cx="44" cy="346" r="412" style="fill: #717df3" />
+<g style="font-family: serif; fill: #5e72a7; font-size: 218pt">
 <g transform="translate(1000, 1000)">
-<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >◺</text>
-<text x="0" y="0" transform="rotate(43.111)" fill-opacity="0.970" >◺</text>
-<text x="0" y="0" transform="rotate(86.223)" fill-opacity="0.940" >◺</text>
-<text x="0" y="0" transform="rotate(129.334)" fill-opacity="0.910" >◺</text>
-<text x="0" y="0" transform="rotate(172.445)" fill-opacity="0.880" >◺</text>
-<text x="0" y="0" transform="rotate(215.556)" fill-opacity="0.850" >◺</text>
-<text x="0" y="0" transform="rotate(258.668)" fill-opacity="0.820" >◺</text>
-<text x="0" y="0" transform="rotate(301.779)" fill-opacity="0.790" >◺</text>
-<text x="0" y="0" transform="rotate(344.890)" fill-opacity="0.760" >◺</text>
+<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >◁</text>
+<text x="0" y="0" transform="rotate(58.990)" fill-opacity="0.970" >◁</text>
+<text x="0" y="0" transform="rotate(117.980)" fill-opacity="0.940" >◁</text>
+<text x="0" y="0" transform="rotate(176.970)" fill-opacity="0.910" >◁</text>
+<text x="0" y="0" transform="rotate(235.960)" fill-opacity="0.880" >◁</text>
+<text x="0" y="0" transform="rotate(294.950)" fill-opacity="0.850" >◁</text>
+<text x="0" y="0" transform="rotate(353.940)" fill-opacity="0.820" >◁</text>
 </g>
 </g>
 </svg>
