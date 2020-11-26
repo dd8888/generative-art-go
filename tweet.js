@@ -10,6 +10,14 @@ var T = new Twit({
   timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
   strictSSL: true, // optional - requires SSL certificates to be valid.
 });
+process.argv.forEach(function (val, index, array) {
+  //console.log(index + ": " + val);
+});
+console.log(argv.key);
+console.log(argv.secret);
+console.log(argv.token);
+console.log(argv.tokensecret);
+// post a tweet with media
 
 var b64content = fs.readFileSync("./images/preimage.svg.jpeg", {
   encoding: "base64",
