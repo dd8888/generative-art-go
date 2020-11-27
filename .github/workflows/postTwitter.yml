@@ -1,7 +1,7 @@
 name: Run and upload image to twitter
 on:
   schedule:
-    - cron: "0 1-23 * * *"
+    - cron: "0 */1 * * *"
   push:
     branches:
       - main
