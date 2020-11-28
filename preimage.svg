@@ -3,20 +3,65 @@
 <svg width="1080" height="1080"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0" y="0" width="1080" height="1080" style="fill: #574561" />
-<rect x="819" y="551" width="166" height="899" style="fill: #e89456" />
-<rect x="601" y="1062" width="184" height="649" style="fill: #eb2e4e" />
-<rect x="1064" y="113" width="19" height="518" style="fill: #a9c42d" />
-<circle cx="610" cy="682" r="204" style="fill: #a85ab4" />
-<circle cx="510" cy="679" r="150" style="fill: #908a20" />
-<circle cx="864" cy="620" r="33" style="fill: #aa86f4" />
-<g style="font-family: serif; fill: white; font-size: 67pt">
+HOLA4<rect x="0" y="0" width="1080" height="1080" style="fill: #2c666d" />
+<g style="font-family: serif; fill: white; font-size: 286pt">
 <g transform="translate(540, 540)">
-<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >▆</text>
-<text x="0" y="0" transform="rotate(87.555)" fill-opacity="0.970" >▆</text>
-<text x="0" y="0" transform="rotate(175.109)" fill-opacity="0.940" >▆</text>
-<text x="0" y="0" transform="rotate(262.664)" fill-opacity="0.910" >▆</text>
-<text x="0" y="0" transform="rotate(350.218)" fill-opacity="0.880" >▆</text>
+<rect x="-540" y="-540" width="120" height="1080" style="fill: #f72275" />
+<rect x="-540" y="-540" width="120" height="360" style="fill: #664931" />
+<rect x="-540" y="-180" width="120" height="360" style="fill: #356075" />
+<rect x="-540" y="180" width="120" height="360" style="fill: #566b52" />
+<rect x="-420" y="-540" width="120" height="1080" style="fill: #c881db" />
+<rect x="-420" y="-540" width="120" height="180" style="fill: #457c7a" />
+<rect x="-420" y="-360" width="120" height="180" style="fill: #2c314b" />
+<rect x="-420" y="-180" width="120" height="180" style="fill: #3b3a61" />
+<rect x="-420" y="0" width="120" height="180" style="fill: #343604" />
+<rect x="-420" y="180" width="120" height="180" style="fill: #76525e" />
+<rect x="-420" y="360" width="120" height="180" style="fill: #614330" />
+<rect x="-300" y="-540" width="120" height="1080" style="fill: #bbbb04" />
+<rect x="-300" y="-540" width="120" height="270" style="fill: #813a2d" />
+<rect x="-300" y="-270" width="120" height="270" style="fill: #995c50" />
+<rect x="-300" y="0" width="120" height="270" style="fill: #22788d" />
+<rect x="-300" y="270" width="120" height="270" style="fill: #66629d" />
+<rect x="-180" y="-540" width="120" height="1080" style="fill: #259b23" />
+<rect x="-180" y="-540" width="120" height="216" style="fill: #304c5f" />
+<rect x="-180" y="-324" width="120" height="216" style="fill: #4e3e72" />
+<rect x="-180" y="-108" width="120" height="216" style="fill: #15402c" />
+<rect x="-180" y="108" width="120" height="216" style="fill: #894a60" />
+<rect x="-180" y="324" width="120" height="216" style="fill: #a0693e" />
+<rect x="-60" y="-540" width="120" height="1080" style="fill: #c56329" />
+<rect x="-60" y="-540" width="120" height="180" style="fill: #462c35" />
+<rect x="-60" y="-360" width="120" height="180" style="fill: #583848" />
+<rect x="-60" y="-180" width="120" height="180" style="fill: #5c3c20" />
+<rect x="-60" y="0" width="120" height="180" style="fill: #4d7074" />
+<rect x="-60" y="180" width="120" height="180" style="fill: #924d71" />
+<rect x="-60" y="360" width="120" height="180" style="fill: #556a46" />
+<rect x="60" y="-540" width="120" height="1080" style="fill: #d1c765" />
+<rect x="60" y="-540" width="120" height="360" style="fill: #693349" />
+<rect x="60" y="-180" width="120" height="360" style="fill: #8a5c41" />
+<rect x="60" y="180" width="120" height="360" style="fill: #575b41" />
+<rect x="180" y="-540" width="120" height="1080" style="fill: #9571f5" />
+<rect x="180" y="-540" width="120" height="360" style="fill: #7e462d" />
+<rect x="180" y="-180" width="120" height="360" style="fill: #43315b" />
+<rect x="180" y="180" width="120" height="360" style="fill: #482b3f" />
+<rect x="300" y="-540" width="120" height="1080" style="fill: #e274d6" />
+<rect x="300" y="-540" width="120" height="216" style="fill: #5b4f40" />
+<rect x="300" y="-324" width="120" height="216" style="fill: #245c95" />
+<rect x="300" y="-108" width="120" height="216" style="fill: #8d6b73" />
+<rect x="300" y="108" width="120" height="216" style="fill: #473b0a" />
+<rect x="300" y="324" width="120" height="216" style="fill: #143c21" />
+<rect x="420" y="-540" width="120" height="1080" style="fill: #b1a428" />
+<rect x="420" y="-540" width="120" height="216" style="fill: #694c40" />
+<rect x="420" y="-324" width="120" height="216" style="fill: #4978a3" />
+<rect x="420" y="-108" width="120" height="216" style="fill: #64714f" />
+<rect x="420" y="108" width="120" height="216" style="fill: #755878" />
+<rect x="420" y="324" width="120" height="216" style="fill: #55643f" />
+<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >⋒</text>
+<text x="0" y="0" transform="rotate(56.629)" fill-opacity="0.970" >⋒</text>
+<text x="0" y="0" transform="rotate(113.257)" fill-opacity="0.940" >⋒</text>
+<text x="0" y="0" transform="rotate(169.886)" fill-opacity="0.910" >⋒</text>
+<text x="0" y="0" transform="rotate(226.514)" fill-opacity="0.880" >⋒</text>
+<text x="0" y="0" transform="rotate(283.143)" fill-opacity="0.850" >⋒</text>
+<text x="0" y="0" transform="rotate(339.772)" fill-opacity="0.820" >⋒</text>
 </g>
 </g>
 </svg>
