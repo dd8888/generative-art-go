@@ -3,34 +3,20 @@
 <svg width="1080" height="1080"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="0" y="0" width="1080" height="1080" style="fill: #6a192b" />
-<rect x="94" y="586" width="223" height="269" style="fill: #d63e6b" />
-<rect x="335" y="350" width="420" height="604" style="fill: #dc6fae" />
-<rect x="823" y="241" width="724" height="13" style="fill: #ba8ffd" />
-<rect x="440" y="411" width="509" height="684" style="fill: #ec9eef" />
-<circle cx="765" cy="33" r="73" style="fill: #b0a735" />
-<circle cx="153" cy="80" r="75" style="fill: #d15ac2" />
-<g style="font-family: serif; fill: white; font-size: 301pt">
+<rect x="0" y="0" width="1080" height="1080" style="fill: #574561" />
+<rect x="819" y="551" width="166" height="899" style="fill: #e89456" />
+<rect x="601" y="1062" width="184" height="649" style="fill: #eb2e4e" />
+<rect x="1064" y="113" width="19" height="518" style="fill: #a9c42d" />
+<circle cx="610" cy="682" r="204" style="fill: #a85ab4" />
+<circle cx="510" cy="679" r="150" style="fill: #908a20" />
+<circle cx="864" cy="620" r="33" style="fill: #aa86f4" />
+<g style="font-family: serif; fill: white; font-size: 67pt">
 <g transform="translate(540, 540)">
-<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >▔</text>
-<text x="0" y="0" transform="rotate(19.070)" fill-opacity="0.970" >▔</text>
-<text x="0" y="0" transform="rotate(38.140)" fill-opacity="0.940" >▔</text>
-<text x="0" y="0" transform="rotate(57.210)" fill-opacity="0.910" >▔</text>
-<text x="0" y="0" transform="rotate(76.280)" fill-opacity="0.880" >▔</text>
-<text x="0" y="0" transform="rotate(95.350)" fill-opacity="0.850" >▔</text>
-<text x="0" y="0" transform="rotate(114.420)" fill-opacity="0.820" >▔</text>
-<text x="0" y="0" transform="rotate(133.491)" fill-opacity="0.790" >▔</text>
-<text x="0" y="0" transform="rotate(152.561)" fill-opacity="0.760" >▔</text>
-<text x="0" y="0" transform="rotate(171.631)" fill-opacity="0.730" >▔</text>
-<text x="0" y="0" transform="rotate(190.701)" fill-opacity="0.700" >▔</text>
-<text x="0" y="0" transform="rotate(209.771)" fill-opacity="0.670" >▔</text>
-<text x="0" y="0" transform="rotate(228.841)" fill-opacity="0.640" >▔</text>
-<text x="0" y="0" transform="rotate(247.911)" fill-opacity="0.610" >▔</text>
-<text x="0" y="0" transform="rotate(266.981)" fill-opacity="0.580" >▔</text>
-<text x="0" y="0" transform="rotate(286.051)" fill-opacity="0.550" >▔</text>
-<text x="0" y="0" transform="rotate(305.121)" fill-opacity="0.520" >▔</text>
-<text x="0" y="0" transform="rotate(324.191)" fill-opacity="0.490" >▔</text>
-<text x="0" y="0" transform="rotate(343.261)" fill-opacity="0.460" >▔</text>
+<text x="0" y="0" transform="rotate(0.000)" fill-opacity="1.000" >▆</text>
+<text x="0" y="0" transform="rotate(87.555)" fill-opacity="0.970" >▆</text>
+<text x="0" y="0" transform="rotate(175.109)" fill-opacity="0.940" >▆</text>
+<text x="0" y="0" transform="rotate(262.664)" fill-opacity="0.910" >▆</text>
+<text x="0" y="0" transform="rotate(350.218)" fill-opacity="0.880" >▆</text>
 </g>
 </g>
 </svg>
