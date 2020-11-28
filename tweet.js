@@ -38,7 +38,7 @@ T.post(
     // now we can assign alt text to the media, for use by screen readers and
     // other text-based presentations and interpreters
     var mediaIdStr = data.media_id_string;
-    var altText = "";
+    var altText = "#art";
     var meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
 
     T.post(
@@ -53,7 +53,7 @@ T.post(
           };
 
           T.post("statuses/update", params, function (err, data, response) {
-            console.log(data);
+            console.log("Data: ", data);
           });
         }
       }
